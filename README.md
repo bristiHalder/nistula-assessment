@@ -59,6 +59,23 @@ pytest tests/ -v
 > **Note:** Tests make real Claude API calls. Ensure `ANTHROPIC_API_KEY` is set in `.env`.
 
 ---
+ 
+## Demo
+ 
+### All 6 tests passing
+ 
+![Tests passing](assets/tests_passed1.png)
+![Tests passing continued](assets/tests_passed2.png)
+ 
+All 6 integration tests pass in ~24s, covering availability queries, complaint escalation, check-in queries, missing optional fields, invalid source rejection, and special requests.
+ 
+### Live server response
+ 
+![curl response](assets/curl_response.png)
+ 
+A real request to the running server — Rahul's availability + pricing query is classified as `pre_sales_pricing`, a reply is drafted with the correct nightly rate and 4-night total, and the confidence score of `1.0` triggers an `auto_send` action.
+ 
+---
 
 ## Architecture
 
