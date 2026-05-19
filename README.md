@@ -1,4 +1,4 @@
-#Guest Message Handler
+# Guest Message Handler
 
 A backend system that receives guest messages from multiple channels, normalises them into a unified schema, classifies the query type, and uses Claude AI to draft context-aware replies with confidence scoring.
 
